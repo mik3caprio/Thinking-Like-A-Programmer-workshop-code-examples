@@ -26,11 +26,11 @@ while True:
             if (player_bet == "p"):
                 # If it is 7 or 11 on the first roll and player bet pass, they win
                 print "You rolled %d - you win!" % (result, )
-                break
             elif (player_bet == "dp"):
                 # If it is 7 or 11 and player bet don't pass, they lose
                 print "Ouch, you rolled %d and bet \"don't pass\" - you lose. Game Over." % (result, )
-                break
+
+            break
         else:
             # Set the point
             player_point = result
@@ -47,7 +47,7 @@ while True:
             elif (player_bet == "dp"):
                 # If it is 7 or 11 and player bet don't pass, they win
                 print "You rolled %d - you win!" % (result, )
-
+                
             break
         elif (result == player_point):
             # The result matches the point
