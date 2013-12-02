@@ -1,41 +1,46 @@
-Anyone and everyone can write their own programs! If you've ever cooked 
-following a recipe, you can program. If you've ever solved a puzzle, you can 
-program. If you've ever played a game - you can program! Learn the basic 
-concepts of computers, information processing, and modern programming 
-languages from a pro and empower yourself with a set of problem solving tools 
-you can apply to any situation. Students at all skill levels are welcome, though 
-beginners will benefit most from this study. No experience is required other
+Anyone and everyone can write their own programs! If you've ever
+cooked following a recipe, you can program. If you've ever solved a
+puzzle, you can program. If you've ever played a game - you can
+program! Learn the basic concepts of computers, information
+processing, and modern programming languages from a pro and empower
+yourself with a set of problem solving tools you can apply to any
+situation. Students at all skill levels are welcome, though beginners
+will benefit most from this study. No experience is required other
 than a strong desire to learn how to program.
 
-Students will walk out of this workshop having learned many of the fundamental 
-concepts of modern programming languages. They will gain a basic working 
-knowledge of the Python programming language, and will take with them the mental 
-framework needed to approach problems logically and atomically. Please note that 
-this workshop is not about "building web sites" or using HTML or other markup 
-languages or any other form of "front end design"; Python is best described as a 
-"back end" technology and is all about how technology works "under the hood".
+Students will walk out of this workshop having learned many of the
+fundamental concepts of modern programming languages. They will gain a
+basic working knowledge of the Python programming language, and will
+take with them the mental framework needed to approach problems
+logically and atomically. Please note that this workshop is not about
+"building web sites" or using HTML or other markup languages or any
+other form of "front end design"; Python is best described as a "back
+end" technology and is all about how technology works "under the
+hood".
 
-MacBooks with Mac OS 10.4 or greater or a Unix based computer are recommended, 
-because they already come pre-installed with all the tools you need to get 
-started programming immediately. If you are using a Windows PC you must install 
-Python - this applies ONLY to Windows PCs. The self-installing Python version you
-need to download can be found at this link:
+MacBooks with Mac OS 10.4 or greater or a Unix based computer are
+recommended, because they already come pre-installed with all the
+tools you need to get started programming immediately. If you are
+using a Windows PC you must install Python - this applies ONLY to
+Windows PCs. The self-installing Python version you need to download
+can be found at this link:
 
 http://www.python.org/ftp/python/2.7.2/python-2.7.2.msi
 
-Next you will need to follow the instructions under the sections "Finding 
-python.exe" and "Finding your script files", as written in the tutorial found 
-here:
+Next you will need to follow the instructions under the sections
+"Finding python.exe" and "Finding your script files", as written in
+the tutorial found here:
 
 http://www.imladris.com/Scripts/PythonForWindows.html
 
-The "Thinking Like A Programmer" workshop is regularly held at New Work City in
-New York, New York. You can learn more about the NWC coworking space here:
+The "Thinking Like A Programmer" workshop has been held at New Work
+City in New York, New York. You can learn more about the NWC coworking
+space here:
 
 http://nwc.co
 
-You can also find more information about the class in a blog post, and the 
-presentation online at the following links:
+You can also find more information about the class in a blog post, and
+the presentation online at the following links:
 
 http://mikecapr.io/2012/01/30/on-teaching-and-inspiration/
 
