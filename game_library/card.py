@@ -1,8 +1,14 @@
+import sys
+
 from collections import deque
+from termcolor import colored
 
 
 # Define what a card is; each card has a name, a point value, and a suit
 class Card:
+    red_suits = [unichr(0x2665), unichr(0x2666)]
+    blue_suits = [unichr(0x2663), unichr(0x2660)]
+
     def __init__(self, this_card_name, this_card_points, this_card_suit):
         self.card_name = this_card_name
         self.card_points = this_card_points
@@ -10,7 +16,12 @@ class Card:
 
     # Return the card's name and suit for printing
     def get_card(self):
-        return unicode(self.card_name) + self.card_suit
+        if (self.card_suit in self.red_suits):
+            color = 'red'
+        else:
+            color = 'blue'
+
+        return colored(unicode(self.card_name), 'yellow') + colored(self.card_suit, color)
 
     # Return the card's name
     def get_name(self):

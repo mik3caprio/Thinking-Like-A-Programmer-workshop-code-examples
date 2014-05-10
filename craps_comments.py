@@ -7,13 +7,11 @@
 
     # Roll two dice
 
-    # If it is the first roll, and it is not 7 or 11, declare the point
-
-            # If it is 7 or 11 on the first roll and player bet pass, they win
-
-            # If it is 7 or 11 and player bet don't pass, they lose
+    # If it is the first roll declare the point
 
         # Set the point
+
+    # Else
 
         # Check the result to see if it matches the point
 

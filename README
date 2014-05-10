@@ -18,8 +18,8 @@ languages or any other form of "front end design"; Python is best described as a
 MacBooks with Mac OS 10.4 or greater or a Unix based computer are recommended, 
 because they already come pre-installed with all the tools you need to get 
 started programming immediately. If you are using a Windows PC you must install 
-Python - this applies ONLY to Windows PCs. The self-installing Python version you
-need to download can be found at this link:
+Python or a Unix virtual machine - this applies ONLY to Windows PCs. The 
+self-installing Python version you need to download can be found at this link:
 
 http://www.python.org/ftp/python/2.7.2/python-2.7.2.msi
 
@@ -29,15 +29,15 @@ here:
 
 http://www.imladris.com/Scripts/PythonForWindows.html
 
-The "Thinking Like A Programmer" workshop is regularly held at New Work City in
-New York, New York. You can learn more about the NWC coworking space here:
+The "Thinking Like A Programmer" workshop is regularly held at locations in
+New York, New York. See the workshop places, schedules, and times here:
 
-http://nwc.co
+http://learntocode.eventbrite.com/
 
-You can also find more information about the class in a blog post, and the 
+You can also find more information about the workshop in a blog post, and the 
 presentation online at the following links:
 
-http://mikecap.squarespace.com/blog/2012/1/30/on-teaching-and-inspiration.html
+http://mikecapr.io/2012/01/30/on-teaching-and-inspiration/
 
 http://prezi.com/0sccgmctm16i/a-conceptual-history-of-computing/
 
