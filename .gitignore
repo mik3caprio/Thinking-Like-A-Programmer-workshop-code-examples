@@ -1,0 +1,13 @@
+.gitignore
+*.pyc
+*.bak
+*.swp
+*.log
+*.db
+*.project
+*.pydevproject
+.settings
+.DS_STORE
+.sass-cache
+.*~
+*~
