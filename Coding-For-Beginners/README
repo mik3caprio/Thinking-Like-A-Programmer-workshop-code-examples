@@ -1,0 +1,86 @@
+Welcome to our hands-on, intensive, one day workshop. You will leave here 
+today with all the technical tools and knowledge you need to read and write 
+your own software! If you have not yet registered, you can do so here:
+
+http://learntocode.eventbrite.com/
+
+
+IMPORTANT NOTES:
+
+    1. This workshop is not about building websites.
+
+    2. Register before 3:00p.m. the Friday before the workshop day. You must 
+    register before then, no exceptions or walk-ins.
+
+    3. You should bring an ID for building security to check on the workshop 
+    day, as they will have a list of attendees.
+
+You will soon understand the basic concepts of computers, information 
+processing, and modern programming languages empower yourself with a set of 
+problem solving tools you can apply to any situation. Students at all skill 
+levels are welcome, though beginners will benefit most from this study. No 
+experience is required other than a strong desire to learn how to program! 
+Students will walk out of this workshop having learned the following:
+
+    - The history of computers, from ancient to modern times
+
+    - How a modern computer works, from hardware to software
+
+    - Working with your computer's operating system using commands
+
+    - Installing a package manager to install programming tools (Homebrew)
+
+    - Programming language basics and using an interpreter
+
+    - Creating programs using step-by-step outlines
+
+    - Researching and reading documentation
+
+    - Installing third party software libraries
+
+    - A brief introduction to advanced programming concepts
+
+Please note that this workshop is not about "building web sites" or using HTML 
+or other markup languages or any other form of "front end design"; Python is 
+best described as a "back end" technology and the workshop is all about how 
+computers work "under the hood" with programming.
+
+You must bring a laptop. MacBooks with Mac OS X (10.4 or greater) preferred 
+because they already come pre-installed with all the tools you need to get 
+started programming immediately. Step by step instructions will be provided 
+prior to start of the workshop to help you get your laptop ready for 
+programming if you don't have a Mac. Attendees will not be able to follow 
+along with learning Unix commands if they're working on a Windows laptop. 
+Please arrive at 11:00a.m. sharp if you think you will need help with your 
+laptop's setup!
+
+If you are using a Windows PC you must install Python - this applies ONLY to
+Windows PCs. The self-installing Python version you need to download can be 
+found at this link:
+
+http://www.python.org/ftp/python/2.7.2/python-2.7.2.msi
+
+Next you will need to follow the instructions under the sections "Finding 
+python.exe" and "Finding your script files", as written in the tutorial found 
+here:
+
+http://www.imladris.com/Scripts/PythonForWindows.html
+
+Light and healthy refreshments will be served during the workshop, but please 
+bring a bag lunch if you have any dietary restrictions, allergies, or other 
+requirements - there will be a short break to eat lunch.
+
+You can also find more information about this workshop in a blog post:
+
+http://mikecapr.io/2012/01/30/on-teaching-and-inspiration/
+
+and the presentation from the starting lecture is online here:
+
+http://prezi.com/0sccgmctm16i/a-conceptual-history-of-computing/
+
+
+Thank you!
+
+Mike Caprio
+mik3cap at gmail
+@mik3cap
