@@ -32,7 +32,7 @@ player_card = deal(deck)
 player_hand.append(player_card)
 player_total = calculate_points(player_hand)
 
-print colored(u"You have: " + player_card.get_card() + u", total of " + unicode(player_total), 'cyan')
+print colored(u"You have: " + player_card.get_card() + u" , total of " + unicode(player_total), 'cyan')
 
 # Deal two cards to the dealer
 print colored(u"Now dealing for the dealer...", 'cyan')
@@ -41,7 +41,7 @@ dealer_card = deal(deck)
 dealer_hand.append(dealer_card)
 dealer_total = calculate_points(dealer_hand)
 
-print colored(u"Dealer deals one card up, dealer has: " + dealer_card.get_card() + u", total of " + unicode(dealer_total), 'cyan')
+print colored(u"Dealer deals one card up, dealer has: " + dealer_card.get_card() + u" , total of " + unicode(dealer_total), 'cyan')
 
 dealer_card = deal(deck)
 dealer_hand.append(dealer_card)
@@ -63,7 +63,7 @@ while True:
         player_hand.append(player_card)
         player_total = calculate_points(player_hand)
 
-        print colored(u"Player dealt: " + player_card.get_card() + u", total of " + unicode(player_total), 'cyan')
+        print colored(u"Player dealt: " + player_card.get_card() + u" , total of " + unicode(player_total), 'cyan')
 
         if (player_total > 21):
             # Check to see if player busts
@@ -78,7 +78,7 @@ while True:
         string_dealer = u"Dealer reveals his cards: "
 
         for each_card in dealer_hand:
-            string_dealer += each_card.get_card() + u", "
+            string_dealer += each_card.get_card() + u" , "
 
         dealer_total = calculate_points(dealer_hand)
         string_dealer += u"total of " + unicode(dealer_total)
@@ -95,7 +95,7 @@ while True:
                 dealer_hand.append(dealer_card)
                 dealer_total = calculate_points(dealer_hand)
 
-                print colored(u"Dealer has: " + dealer_card.get_card() + u", total of " + unicode(dealer_total), 'cyan')
+                print colored(u"Dealer has: " + dealer_card.get_card() + u" , total of " + unicode(dealer_total), 'cyan')
 
                 if (dealer_total > 21):
                     # Check to see if dealer busts
