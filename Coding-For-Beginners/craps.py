@@ -29,17 +29,37 @@ while True:
 
     result = die_1 + die_2
 
-    # If it is the first roll declare the point
     if (player_point == 0):
-        # Set the point
-        player_point = result
+    # It is the first roll
+        if ((result == 7) or (result == 11)):
+            # Check the result to see if it is a natural
+            if (player_bet == "p"):
+                # If it is 7 or 11 and player bet pass, they win
+                print colored("You rolled %d - you win!", 'green') % (result, )
+            elif (player_bet == "dp"):
+                # If it is 7 or 11 and player bet don't pass, they lose
+                print colored("Ouch, you rolled %d and bet \"don't pass\" - you lose. Game Over.", 'red') % (result, )
 
-        print u"Your first roll is %s, %s - your point is %d" % (die_face[die_1], die_face[die_2], player_point)
+            break
+        elif (result in (2, 3, 12)):
+            # Check the result to see if it is craps
+            if (player_bet == "p"):
+                # If it is 7 or 11 and player bet pass, they lose
+                print colored("Ouch, you rolled %d and bet \"pass\" - you lose. Game Over.", 'red') % (result, )
+            elif (player_bet == "dp"):
+                # If it is 7 or 11 and player bet don't pass, they win
+                print colored("You rolled %d - you win!", 'green') % (result, )
+
+            break
+        else:
+            # Set the point
+            player_point = result
+
+            print u"Your first roll is %s, %s - your point is %d" % (die_face[die_1], die_face[die_2], player_point)
     else:
         print u"You rolled %s, %s - result of %d, your point is %d" % (die_face[die_1],
                                                                        die_face[die_2], result, player_point)
 
-        # Check the result to see if it matches the point
         if ((result == 7) or (result == 11)):
             if (player_bet == "p"):
                 # If it is 7 or 11 and player bet pass, they lose
@@ -48,6 +68,16 @@ while True:
                 # If it is 7 or 11 and player bet don't pass, they win
                 print colored("You rolled %d - you win!", 'green') % (result, )
                 
+            break
+        elif (result in (2, 3, 12)):
+            # Check the result to see if it is craps
+            if (player_bet == "p"):
+                # If it is craps and player bet pass, they lose
+                print colored("Ouch, you rolled %d and bet \"pass\" - you lose. Game Over.", 'red') % (result, )
+            elif (player_bet == "dp"):
+                # If it is craps and player bet don't pass, they win
+                print colored("You rolled %d - you win!", 'green') % (result, )
+
             break
         elif (result == player_point):
             # The result matches the point
