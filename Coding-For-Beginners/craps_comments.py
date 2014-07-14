@@ -43,4 +43,4 @@
 
                 # The player makes the point and bet don't pass - they lose
 
-            # No result matches point or is 7, 12 yet - keep rolling!
+            # No result matches point or is 7 yet - keep rolling!

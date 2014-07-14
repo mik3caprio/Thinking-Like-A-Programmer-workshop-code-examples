@@ -30,7 +30,7 @@ while True:
     result = die_1 + die_2
 
     if (player_point == 0):
-    # It is the first roll
+        # It is the first roll
         if ((result == 7) or (result == 11)):
             # Check to see if roll is a natural
             if (player_bet == "p"):
