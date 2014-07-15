@@ -54,17 +54,62 @@ along with learning Unix commands if they're working on a Windows laptop.
 Please arrive at 11:00a.m. sharp if you think you will need help with your 
 laptop's setup!
 
-If you are using a Windows PC you must install Python - this applies ONLY to
-Windows PCs. The self-installing Python version you need to download can be 
-found at this link:
+If you have a Windows PC, the self-installing Python version you need
+to download can be found here:
 
-http://www.python.org/ftp/python/2.7.2/python-2.7.2.msi
+https://www.python.org/ftp/python/2.7.8/python-2.7.8.msi
 
-Next you will need to follow the instructions under the sections "Finding 
-python.exe" and "Finding your script files", as written in the tutorial found 
-here:
+Next you will need to follow the instructions appropriate for your
+Windows OS version to set your Windows PATH:
 
-http://www.imladris.com/Scripts/PythonForWindows.html
+- Windows 7/8
+  + Select Computer from the Start menu
+
+  + Choose System Properties from the context menu
+
+  + Click Advanced system settings > Advanced tab
+
+  + Click on Environment Variables, under System Variables, find PATH, and click on it.
+
+  + In the Edit windows, modify PATH by adding:
+    C:\Python27\;C:\Python27\Scripts; to the value for PATH. If you do
+    not have the item PATH, you may add a new variable with PATH as
+    the name and C:\Python27\;C:\Python27\Scripts; as the value.
+
+  + Reopen Command prompt window, and type in python to check if the
+    PATH variable is set correctly.
+
+
+- Windows XP
+
+  + Start -> Control Panel -> System -> Advanced
+
+  + Click on Environment Variables, under System Variables, find PATH, and click on it.
+
+  + In the Edit windows, modify PATH by adding:
+    C:\Python27\;C:\Python27\Scripts; to the value for PATH. If you do
+    not have the item PATH, you may add a new variable with PATH as
+    the name and C:\Python27\;C:\Python27\Scripts; as the value.
+
+  + Reopen Command prompt window, and type in python to check if the
+    PATH variable is set correctly.
+
+
+- Windows Vista
+  + Right click My Computer icon
+
+  + Choose Properties from the context menu
+
+  + Click Advanced tab (Advanced system settings link in Vista)
+
+  + In the Edit windows, modify PATH by adding:
+    C:\Python27\;C:\Python27\Scripts; to the value for PATH. If you do
+    not have the item PATH, you may add a new variable with PATH as
+    the name and C:\Python27\;C:\Python27\Scripts; as the value.
+
+  + Reopen Command prompt window, and type in python to check if the
+    PATH variable is set correctly.
+
 
 Light and healthy refreshments will be served during the workshop, but please 
 bring a bag lunch if you have any dietary restrictions, allergies, or other 
