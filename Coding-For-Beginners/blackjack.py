@@ -1,4 +1,5 @@
 import random
+import sys
 
 from termcolor import colored
 from game_library.card import *
@@ -34,20 +35,28 @@ player_total = calculate_points(player_hand)
 
 print colored(u"You have: " + player_card.get_card() + u" , total of " + unicode(player_total), 'cyan')
 
-# Deal two cards to the dealer
-print colored(u"Now dealing for the dealer...", 'cyan')
+# It's possible the player can be dealt 21, if so don't give dealer cards
+player_total = calculate_points(player_hand)
 
-dealer_card = deal(deck)
-dealer_hand.append(dealer_card)
-dealer_total = calculate_points(dealer_hand)
+if (player_total == 21):
+    # Exit the program if 21 is dealt on the first hand
+    print colored("Player wins with %s!!" % (str(player_total), ), 'green')
+    sys.exit()
+else:
+    # Else deal two cards to the dealer
+    print colored(u"Now dealing for the dealer...", 'cyan')
 
-print colored(u"Dealer deals one card up, dealer has: " + dealer_card.get_card() + u" , total of " + unicode(dealer_total), 'cyan')
+    dealer_card = deal(deck)
+    dealer_hand.append(dealer_card)
+    dealer_total = calculate_points(dealer_hand)
 
-dealer_card = deal(deck)
-dealer_hand.append(dealer_card)
-dealer_total = calculate_points(dealer_hand)
+    print colored(u"Dealer deals one card up, dealer has: " + dealer_card.get_card() + u" , total of " + unicode(dealer_total), 'cyan')
 
-print colored(u"Dealer deals another card down.", 'cyan')
+    dealer_card = deal(deck)
+    dealer_hand.append(dealer_card)
+    dealer_total = calculate_points(dealer_hand)
+
+    print colored(u"Dealer deals another card down.", 'cyan')
 
 # Play the game until the player or dealer finish
 while True:

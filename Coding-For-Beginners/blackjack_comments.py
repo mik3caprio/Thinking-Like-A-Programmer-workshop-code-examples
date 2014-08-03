@@ -47,7 +47,11 @@
 
 # Deal two cards to the player
 
-# Deal two cards to the dealer
+# It's possible the player can be dealt 21, if so don't give dealer cards
+
+    # Exit the program if 21 is dealt on the first hand
+
+    # Else deal two cards to the dealer
 
 # Play the game until the player or dealer finish
 
