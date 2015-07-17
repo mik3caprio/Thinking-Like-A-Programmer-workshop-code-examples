@@ -1,8 +1,12 @@
+#!/usr/bin/env python
+"""This is a unit test for the blackjack card library."""
+
 import random
 
-from game_library.card import *
+from game_library.card import create_deck
 
 def print_deck(this_deck):
+    """This is a function that prints out all the cards in a deck."""
     int_counter = 0
 
     for each_card in this_deck:
@@ -12,15 +16,15 @@ def print_deck(this_deck):
 
 
 # First create the deck
-deck = create_deck()
+DECK = create_deck()
 
 # Show us the deck
-print_deck(deck)
+print_deck(DECK)
 
 print "\n"
 
 # Shuffle the deck
-random.shuffle(deck)
+random.shuffle(DECK)
 
 # Show us the shuffled deck
-print_deck(deck)
+print_deck(DECK)
