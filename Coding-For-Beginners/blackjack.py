@@ -11,117 +11,117 @@ from game_library.card import create_deck, deal, calculate_points
 
 
 # First create the deck
-DECK = create_deck()
+deck = create_deck()
 
 # Shuffle the deck
-random.shuffle(DECK)
+random.shuffle(deck)
 
-DEALER_HAND = []
-PLAYER_HAND = []
+dealer_hand = []
+player_hand = []
 
-DEALER_TOTAL = 0
-PLAYER_TOTAL = 0
+dealer_total = 0
+player_total = 0
 
-BOOL_PLAYER_DONE = False
+bool_player_done = False
 
 # Print a welcome message
 print colored(u"Welcome to blackjack! Highest to 21 wins. Dealing for you...",
               'green')
 
 # Deal two cards to the player
-PLAYER_CARD = deal(DECK)
-PLAYER_HAND.append(PLAYER_CARD)
-PLAYER_TOTAL = calculate_points(PLAYER_HAND)
+player_card = deal(deck)
+player_hand.append(player_card)
+player_total = calculate_points(player_hand)
 
-print colored(u"You have: " + PLAYER_CARD.get_card(), 'cyan')
+print colored(u"You have: " + player_card.get_card(), 'cyan')
 
-PLAYER_CARD = deal(DECK)
-PLAYER_HAND.append(PLAYER_CARD)
-PLAYER_TOTAL = calculate_points(PLAYER_HAND)
+player_card = deal(deck)
+player_hand.append(player_card)
+player_total = calculate_points(player_hand)
 
-print colored(u"You have: " + PLAYER_CARD.get_card() + u" , total of " + \
-    unicode(PLAYER_TOTAL), 'cyan')
+print colored(u"You have: " + player_card.get_card() + u" , total of " + \
+    unicode(player_total), 'cyan')
 
 # It's possible the player can be dealt 21, if so don't give dealer cards
-PLAYER_TOTAL = calculate_points(PLAYER_HAND)
+player_total = calculate_points(player_hand)
 
-if PLAYER_TOTAL == 21:
+if player_total == 21:
     # Exit the program if 21 is dealt on the first hand
-    print colored("Player wins with %s!!" % (str(PLAYER_TOTAL), ), 'green')
+    print colored("Player wins with %s!!" % (str(player_total), ), 'green')
     sys.exit()
 else:
     # Else deal two cards to the dealer
     print colored(u"Now dealing for the dealer...", 'cyan')
 
-    DEALER_CARD = deal(DECK)
-    DEALER_HAND.append(DEALER_CARD)
-    DEALER_TOTAL = calculate_points(DEALER_HAND)
+    dealer_card = deal(deck)
+    dealer_hand.append(dealer_card)
+    dealer_total = calculate_points(dealer_hand)
 
     print colored(u"Dealer deals one card up, dealer has: " + \
-        DEALER_CARD.get_card() + u" , total of " + unicode(DEALER_TOTAL), \
+        dealer_card.get_card() + u" , total of " + unicode(dealer_total), \
         'cyan')
 
-    DEALER_CARD = deal(DECK)
-    DEALER_HAND.append(DEALER_CARD)
-    DEALER_TOTAL = calculate_points(DEALER_HAND)
+    dealer_card = deal(deck)
+    dealer_hand.append(dealer_card)
+    dealer_total = calculate_points(dealer_hand)
 
     print colored(u"Dealer deals another card down.", 'cyan')
 
 # Play the game until the player or dealer finish
 while True:
-    if not BOOL_PLAYER_DONE:
-        PLAYER_ACTION = raw_input("\nDo you want to hit or stand? (h or s): ")
+    if not bool_player_done:
+        player_action = raw_input("\nDo you want to hit or stand? (h or s): ")
     else:
-        PLAYER_ACTION = "s"
+        player_action = "s"
 
     # Check to see if input is hit or stand
-    if PLAYER_ACTION == "h" and not BOOL_PLAYER_DONE:
+    if player_action == "h" and not bool_player_done:
         # If hit, deal a card
-        PLAYER_CARD = deal(DECK)
-        PLAYER_HAND.append(PLAYER_CARD)
-        PLAYER_TOTAL = calculate_points(PLAYER_HAND)
+        player_card = deal(deck)
+        player_hand.append(player_card)
+        player_total = calculate_points(player_hand)
 
-        print colored(u"Player dealt: " + PLAYER_CARD.get_card() + u" , total \
-of " + unicode(PLAYER_TOTAL), 'cyan')
+        print colored(u"Player dealt: " + player_card.get_card() + u" , total \
+of " + unicode(player_total), 'cyan')
 
-        if PLAYER_TOTAL > 21:
+        if player_total > 21:
             # Check to see if player busts
             print colored("Busted! Game over.", 'red')
             break
-        elif PLAYER_TOTAL == 21:
+        elif player_total == 21:
             # Check to see if player wins
             print colored("Player has 21!", 'green')
-            BOOL_PLAYER_DONE = True
-    elif PLAYER_ACTION == "s":
+            bool_player_done = True
+    elif player_action == "s":
         # If stand, player is done, deal dealer's cards
-        STRING_DEALER = u"Dealer reveals his cards: "
+        string_dealer = u"Dealer reveals his cards: "
 
-        for each_card in DEALER_HAND:
-            STRING_DEALER += each_card.get_card() + u" , "
+        for each_card in dealer_hand:
+            string_dealer += each_card.get_card() + u" , "
 
-        DEALER_TOTAL = calculate_points(DEALER_HAND)
-        STRING_DEALER += u"total of " + unicode(DEALER_TOTAL)
+        dealer_total = calculate_points(dealer_hand)
+        string_dealer += u"total of " + unicode(dealer_total)
 
-        print colored(STRING_DEALER, 'cyan')
+        print colored(string_dealer, 'cyan')
 
         while True:
             # Dealer must hit if points are <= 16 must stand on > 16
-            if DEALER_TOTAL <= 16:
+            if dealer_total <= 16:
                 # Dealer must hit
                 print colored("Dealer hits...", 'cyan')
 
-                DEALER_CARD = deal(DECK)
-                DEALER_HAND.append(DEALER_CARD)
-                DEALER_TOTAL = calculate_points(DEALER_HAND)
+                dealer_card = deal(deck)
+                dealer_hand.append(dealer_card)
+                dealer_total = calculate_points(dealer_hand)
 
-                print colored(u"Dealer has: " + DEALER_CARD.get_card() + u" , \
-total of " + unicode(DEALER_TOTAL), 'cyan')
+                print colored(u"Dealer has: " + dealer_card.get_card() + u" , \
+total of " + unicode(dealer_total), 'cyan')
 
-                if DEALER_TOTAL > 21:
+                if dealer_total > 21:
                     # Check to see if dealer busts
                     print colored("Dealer busted! Player wins!!", 'green')
                     break
-                elif DEALER_TOTAL == 21:
+                elif dealer_total == 21:
                     # If dealer gets 21, house wins
                     print colored("Dealer wins! Game over.", 'red')
                     break
@@ -129,17 +129,17 @@ total of " + unicode(DEALER_TOTAL), 'cyan')
                 # Dealer has to stand, check to see who wins
                 print colored("Dealer stands.", 'cyan')
 
-                if PLAYER_TOTAL > DEALER_TOTAL:
+                if player_total > dealer_total:
                     # Player wins with more points
                     print colored("Player wins with %s!!" % \
-                        (str(PLAYER_TOTAL), ), 'green')
-                elif PLAYER_TOTAL == DEALER_TOTAL:
+                        (str(player_total), ), 'green')
+                elif player_total == dealer_total:
                     # Or there is a tie
                     print colored("Push! Looks like a tie - Game over.", 'cyan')
                 else:
                     # Or the dealer wins with more points
                     print colored("Dealer wins with %s! Game over." % \
-                        (str(DEALER_TOTAL), ), 'red')
+                        (str(dealer_total), ), 'red')
 
                 break
 

@@ -16,15 +16,15 @@ def print_deck(this_deck):
 
 
 # First create the deck
-DECK = create_deck()
+deck = create_deck()
 
 # Show us the deck
-print_deck(DECK)
+print_deck(deck)
 
 print "\n"
 
 # Shuffle the deck
-random.shuffle(DECK)
+random.shuffle(deck)
 
 # Show us the shuffled deck
-print_deck(DECK)
+print_deck(deck)

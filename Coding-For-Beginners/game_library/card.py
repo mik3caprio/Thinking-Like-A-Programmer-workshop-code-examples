@@ -7,8 +7,8 @@ from termcolor import colored
 class Card(object):
     """The card class is an abstract representation of a playing card.
     It has a point value, a name, and a suit."""
-    red_suits = [unichr(0x2665), unichr(0x2666)]
-    blue_suits = [unichr(0x2663), unichr(0x2660)]
+    RED_SUITS = [unichr(0x2665), unichr(0x2666)]
+    BLUE_SUITS = [unichr(0x2663), unichr(0x2660)]
 
     def __init__(self, this_card_name, this_card_points, this_card_suit):
         """Initialization of a card involves setting its three properties."""
@@ -19,7 +19,7 @@ class Card(object):
     # Return the card's name and suit for printing
     def get_card(self):
         """A method to return a card with its name and suit."""
-        if self.card_suit in self.red_suits:
+        if self.card_suit in self.RED_SUITS:
             color = 'red'
         else:
             color = 'blue'
