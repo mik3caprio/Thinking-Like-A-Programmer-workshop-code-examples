@@ -3,12 +3,14 @@
 from collections import deque
 from termcolor import colored
 
+
 # Define what a card is; each card has a name, a point value, and a suit
 class Card(object):
+
     """The card class is an abstract representation of a playing card.
     It has a point value, a name, and a suit."""
-    RED_SUITS = [unichr(0x2665), unichr(0x2666)]
-    BLUE_SUITS = [unichr(0x2663), unichr(0x2660)]
+    RED_SUITS = ["\u2665", "\u2666"]
+    BLUE_SUITS = ["\u2663", "\u2660"]
 
     def __init__(self, this_card_name, this_card_points, this_card_suit):
         """Initialization of a card involves setting its three properties."""
@@ -24,12 +26,13 @@ class Card(object):
         else:
             color = 'blue'
 
-        return colored(unicode(self.card_name), 'yellow') + colored(self.card_suit, color)
+        return colored(self.card_name, 'yellow') + colored(self.card_suit,
+                                                           color)
 
     # Return the card's name
     def get_name(self):
         """A method to return the name of a card."""
-        return unicode(self.card_name)
+        return self.card_name
 
     # Return the card's point value
     def get_points(self):
@@ -40,9 +43,12 @@ class Card(object):
 # Create a deck of cards
 def create_deck():
     """The method that initializes a full deck of 52 playing cards."""
-    suit_list = [unichr(0x2665), unichr(0x2666), unichr(0x2663), unichr(0x2660)]
-    name_points_dict = {"A":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, \
-                        "8":8, "9":9, "10":10, "J":10, "Q":10, "K":10}
+    suit_list = ["\u2665",  #
+                 "\u2666",  #
+                 "\u2663",  #
+                 "\u2660"]  #
+    name_points_dict = {"A": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7,
+                        "8": 8, "9": 9, "10": 10, "J": 10, "Q": 10, "K": 10}
 
     # Use a double ended queue structured list for the deck
     deck_list = deque([])
@@ -50,7 +56,9 @@ def create_deck():
     # For each suit, create a card with each of the name and point entries
     for each_suit in suit_list:
         for each_entry in name_points_dict.keys():
-            new_card = Card(each_entry, name_points_dict[each_entry], each_suit)
+            new_card = Card(each_entry,
+                            name_points_dict[each_entry],
+                            each_suit)
             deck_list.append(new_card)
 
     return deck_list
