@@ -42,71 +42,43 @@ or other markup languages or any other form of "front end design"; Python is
 best described as a "back end" technology and the workshop is all about how 
 computers work "under the hood" with programming.
 
-You must bring a laptop. MacBooks with Mac OS X (10.4 or greater) preferred 
-because they already come pre-installed with all the tools you need to get 
-started programming immediately. Step by step instructions will be provided 
-prior to start of the workshop to help you get your laptop ready for 
-programming if you don't have a Mac. Attendees will not be able to follow 
-along with learning Unix commands if they're working on a Windows laptop. 
+You must bring a laptop. In order to hit the ground running, we recommend 
+fulfilling one of the following computer requirements:
+ * A MacBook of any hardware specification running MacOS X, whatever the 
+ latest version of the operating system is. (strongly recommended for people 
+ with little or no knowledge of computers)
+
+ * Any computer running a Unix-based operating system. (recommended for 
+ people with more starting knowledge of computers)
+
+Apple computers running the MacOS X operating system already have every 
+software tool needed to start learning how to program right away! For the 
+work we are doing in this workshop, you will also need to install something
+called a package manager. The Homebrew package manager is only used with
+MacOS X. The code editor we will be using, Sublime Text, is available in
+both MacOS X and Windows.
+
+The language we will be exploring is called Python. The version of Python
+that everyone should be using is version 3 - version 2 is not going to be
+supported in the future. Apple and Unix-based computers come pre-installed
+with Python, but not necessarily the latest version of Python 3. Homebrew
+will allow you to easily install your own version of Python on a MacBook
+and it will be the latest and greatest. Windows computers do NOT come with
+Python pre-installed.
+
 Please arrive at 11:00a.m. sharp if you think you will need help with your 
 laptop's setup!
 
-If you have a Windows PC, the self-installing Python version you need
-to download can be found here:
+PLEASE NOTE:  If you choose to use a Windows computer, you will not be able
+to follow along with any of the open source UNIX command or package manager
+instructions.
 
-https://www.python.org/ftp/python/2.7.8/python-2.7.8.msi
+If you have a Windows PC, the self-installing Python version you need to
+download can be found here:  https://www.python.org/downloads/windows/
 
-Next you will need to follow the instructions appropriate for your
-Windows OS version to set your Windows PATH:
-
-- Windows 7/8
-  + Select Computer from the Start menu
-
-  + Choose System Properties from the context menu
-
-  + Click Advanced system settings > Advanced tab
-
-  + Click on Environment Variables, under System Variables, find PATH, and click on it.
-
-  + In the Edit windows, modify PATH by adding:
-    C:\Python27\;C:\Python27\Scripts; to the value for PATH. If you do
-    not have the item PATH, you may add a new variable with PATH as
-    the name and C:\Python27\;C:\Python27\Scripts; as the value.
-
-  + Reopen Command prompt window, and type in python to check if the
-    PATH variable is set correctly.
-
-
-- Windows XP
-
-  + Start -> Control Panel -> System -> Advanced
-
-  + Click on Environment Variables, under System Variables, find PATH, and click on it.
-
-  + In the Edit windows, modify PATH by adding:
-    C:\Python27\;C:\Python27\Scripts; to the value for PATH. If you do
-    not have the item PATH, you may add a new variable with PATH as
-    the name and C:\Python27\;C:\Python27\Scripts; as the value.
-
-  + Reopen Command prompt window, and type in python to check if the
-    PATH variable is set correctly.
-
-
-- Windows Vista
-  + Right click My Computer icon
-
-  + Choose Properties from the context menu
-
-  + Click Advanced tab (Advanced system settings link in Vista)
-
-  + In the Edit windows, modify PATH by adding:
-    C:\Python27\;C:\Python27\Scripts; to the value for PATH. If you do
-    not have the item PATH, you may add a new variable with PATH as
-    the name and C:\Python27\;C:\Python27\Scripts; as the value.
-
-  + Reopen Command prompt window, and type in python to check if the
-    PATH variable is set correctly.
-
+Next you will need to follow the instructions appropriate for your Windows
+OS version to set your Windows PATH or a whole bunch of other things - please
+refer to the python.org website for further instructions.
 
 Light and healthy refreshments will be served during the workshop, but please 
 bring a bag lunch if you have any dietary restrictions, allergies, or other 
