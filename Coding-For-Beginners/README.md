@@ -96,5 +96,7 @@ http://prezi.com/0sccgmctm16i/a-conceptual-history-of-computing/
 Thank you!
 
 Mike Caprio
+
 mik3cap at gmail
+
 @mik3caprio
