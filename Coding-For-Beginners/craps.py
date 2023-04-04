@@ -36,6 +36,9 @@ while True:
 
     if player_point == 0:
         # It is the first roll
+        print("Your first roll is %s, %s" %
+              (DIE_FACE[die_1], DIE_FACE[die_2]))
+
         if result == 7 or result == 11:
             # Check to see if roll is a natural
             if player_bet == "p":
@@ -69,9 +72,7 @@ while True:
         else:
             # Set the point
             player_point = result
-
-            print("Your first roll is %s, %s - your point is %d" %
-                  (DIE_FACE[die_1], DIE_FACE[die_2], player_point))
+            print("Your point is %d" % (player_point))
     else:
         print("You rolled %s, %s - result of %d, your point is %d" %
               (DIE_FACE[die_1], DIE_FACE[die_2], result, player_point))
